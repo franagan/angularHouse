@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fairhouse';
+  selectedLocation: HousingLocation | undefined;
+  updateSelectedLocation(location: HousingLocation) {
+    this.selectedLocation = location;
+   } searchHousingLocations() {};
   housingLocationList: HousingLocation[] = [
     {
       name: "Acme Fresh Start Housing",
